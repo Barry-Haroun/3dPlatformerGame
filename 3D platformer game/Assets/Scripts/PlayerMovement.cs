@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Transform cameraTransform;
 
-    private Animator animator;
+    //private Animator animator;
     private CharacterController characterController;
     private float ySpeed;
     private float originalStepOffset;
@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
     }
@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
             inputMagnitude /= 2;
         }
 
-        animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
+       // animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
         float speed = inputMagnitude * maximumSpeed;
         movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
