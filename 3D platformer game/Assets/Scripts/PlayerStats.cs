@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -8,6 +9,8 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private float maxHealth;
 
     [SerializeField] private float currentHealth;
+
+    // [SerializeField] private float attack;
 
     public HealthBar healthBar;
     private void Start()
@@ -21,12 +24,18 @@ public class PlayerStats : MonoBehaviour
     {
         currentHealth -= amount;
         healthBar.SetSlider(currentHealth);
+        Debug.LogError(amount);
     }
 
     public void Heal(float amount) 
     {
         currentHealth += amount;
         healthBar.SetSlider(currentHealth);
+        Debug.LogError(currentHealth);
+
+       // currentHealth += amount;
+      //  if (currentHealth > maxHealth) currentHealth = maxHealth;
+
     }
 
 

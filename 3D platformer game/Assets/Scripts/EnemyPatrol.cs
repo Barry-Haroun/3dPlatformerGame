@@ -31,5 +31,6 @@ public class EnemyPatrol : MonoBehaviour
             }
             enemy.SetDestination(currentTarget);
         }
+       
     }
 }
