@@ -94,15 +94,20 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-  //  private void OnApplicationFocus(bool focus)
-  //  {
-      //  if (focus)
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.LogError(collision.gameObject);
+    }
+
+    //  private void OnApplicationFocus(bool focus)
+    //  {
+    //  if (focus)
     //    {
-     //       Cursor.lockState = CursorLockMode.Locked;
-     //   }
-       // else
-        //{
-        //    Cursor.lockState = CursorLockMode.None;
-       // }
-   // }
+    //       Cursor.lockState = CursorLockMode.Locked;
+    //   }
+    // else
+    //{
+    //    Cursor.lockState = CursorLockMode.None;
+    // }
+    // }
 }
