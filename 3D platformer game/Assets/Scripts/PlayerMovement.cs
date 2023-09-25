@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -92,11 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.LogError(collision.gameObject);
+        
     }
 
     //  private void OnApplicationFocus(bool focus)
