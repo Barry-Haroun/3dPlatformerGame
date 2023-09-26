@@ -8,9 +8,18 @@ public class LooseGoal : MonoBehaviour
     public Loose loose;
 
 
-    private void Update()
+    private void OnEnable()
     {
-        
+       
+
+    }
+
+
+
+    private void OnDisable()
+    {
+        playerStats = null;
+        loose = null;
 
     }
 }

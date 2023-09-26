@@ -21,6 +21,7 @@ public class Loose : MonoBehaviour
         if (!gameEnded)
         {
             Debug.Log("You Loose!");
+            loosePanel.SetActive(true);
             gameEnded = true;
         }
 

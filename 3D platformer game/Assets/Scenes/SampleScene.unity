@@ -733,7 +733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210712610}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16219112, y: 0.00000002506926, z: -0.0000000041205706, w: 0.98675936}
+  m_LocalRotation: {x: 0.16219115, y: -0.000000019066446, z: 0.0000000031339038, w: 0.98675936}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2739,7 +2739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14421567, y: 0.000000017026514, z: -0.00000000248143, w: 0.9895463}
+  m_LocalRotation: {x: 0.14421567, y: -0.000000017026514, z: 0.00000000248143, w: 0.9895463}
   m_LocalPosition: {x: -92.7, y: 4.1664023, z: -99.80001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3019,7 +3019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93eac960440c19e408f128fcc7241d20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loosePanel: {fileID: 474057057}
+  loosePanel: {fileID: 1078810210}
   looseGoalScript: {fileID: 0}
 --- !u!4 &1078810212
 Transform:
@@ -3891,7 +3891,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275072244}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14421566, y: 0.000000008513256, z: -0.0000000012407148, w: 0.9895463}
+  m_LocalRotation: {x: 0.14421566, y: -0.000000008513256, z: 0.0000000012407148, w: 0.9895463}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4675,7 +4675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -41.3}
+  m_AnchoredPosition: {x: 0, y: -36.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1466178941
@@ -4727,8 +4727,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4936,7 +4936,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Great job!!!
+  m_text: 'Great job
+
+    You won!!!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4970,8 +4972,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -6503,7 +6505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78009962581b3e043a76913c25d00940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winPanel: {fileID: 154941611}
+  winPanel: {fileID: 1808738944}
   winGoalScript: {fileID: 1740011814}
 --- !u!4 &1808738946
 Transform:
