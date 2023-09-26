@@ -5,29 +5,23 @@ using UnityEngine;
 public class PlatformAttach : MonoBehaviour
 {
     public GameObject Player;
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.LogError(0);
-        if (collision.gameObject == Player)
+        Debug.Log("you enter");
+        if (other.gameObject == Player)
         {
-        Debug.LogError(1);
-            Player.transform.SetParent(transform);
+            other.transform.SetParent(transform);
         }
         
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if (Player.gameObject == Player)
+        Debug.Log("you exit");
+        if (other.gameObject == Player)
         {
-            Player.transform.SetParent(null);
+            other.transform.SetParent(null);
         }
     }
-
-    private void FixedUpdate()
-    {
-      
-    }
-
 
 }
