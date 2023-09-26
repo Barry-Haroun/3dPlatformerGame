@@ -733,7 +733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210712610}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16219115, y: -0.0000000047138653, z: 7.7480566e-10, w: 0.98675936}
+  m_LocalRotation: {x: 0.16219112, y: 0.00000002506926, z: -0.0000000041205706, w: 0.98675936}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3000,9 +3000,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1078810212}
   - component: {fileID: 1078810211}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GameController 1
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6098,7 +6098,7 @@ Transform:
   m_GameObject: {fileID: 1740011813}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.3, y: 1.0661, z: 44.0167}
+  m_LocalPosition: {x: -90.1, y: 1.0661, z: -82.8}
   m_LocalScale: {x: 0.1, y: 1.832269, z: 1.0333}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6484,9 +6484,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1808738946}
   - component: {fileID: 1808738945}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GameController
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

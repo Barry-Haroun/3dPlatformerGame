@@ -10,7 +10,7 @@ public class LooseGoal : MonoBehaviour
 
     private void Update()
     {
-        Loose.Destroy(loose);
+        
 
     }
 }
