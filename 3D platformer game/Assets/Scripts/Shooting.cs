@@ -17,7 +17,7 @@ public class Shooting : MonoBehaviour
                 EnemyStats EnemyStats = hit.collider.GetComponent<EnemyStats>();
                 if (EnemyStats != null)
                 {
-                    EnemyStats.TakeDamage(10);
+                    EnemyStats.TakeDamage(19);
                 }
             }
         }

@@ -46,8 +46,8 @@ public class PlayerMovement : MonoBehaviour
         {
             inputMagnitude /= 2;
         }
-
-       // animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
+      //  Cursor.lockState = CursorLockMode.Locked;
+        // animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
         float speed = inputMagnitude * maximumSpeed;
         movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
@@ -96,15 +96,15 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-    //  private void OnApplicationFocus(bool focus)
-    //  {
-    //  if (focus)
-    //    {
-    //       Cursor.lockState = CursorLockMode.Locked;
-    //   }
-    // else
-    //{
-    //    Cursor.lockState = CursorLockMode.None;
-    // }
-    // }
+      //private void OnApplicationFocus(bool focus)
+      //{
+         //if (focus)
+         //{
+             //Cursor.lockState = CursorLockMode.Locked;
+         //}
+         //else
+         //{
+            //Cursor.lockState = CursorLockMode.None;
+         //}
+      //}
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -10,9 +11,12 @@ public class PlayerStats : MonoBehaviour
 
     [SerializeField] private float currentHealth;
 
-    // [SerializeField] private float attack;
+    //[SerializeField] private float attack;
 
     public HealthBar healthBar;
+    public GameManager gamManager;
+    private bool isDead;
+    //private bool hasCollideWithWinCondition = false;
     private void Start()
     {
         currentHealth = maxHealth;
@@ -39,7 +43,15 @@ public class PlayerStats : MonoBehaviour
     }
 
 
-
+    //private void OnCollisionEnter(Collision collision)
+    //{
+        //if (collision.gameObject.CompareTag("MagicDoor")) 
+        //{
+            //hasCollideWithWinCondition = true;
+            //SceneManager.LoadScene("GameController");
+            //gameObject.SetActive(false);
+        //}
+    //}
 
 
 
@@ -50,8 +62,11 @@ public class PlayerStats : MonoBehaviour
             currentHealth = maxHealth;
         }
         
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
+            isDead = true;
+            gameObject.SetActive(false);
+            gamManager.gameOver();
             Die();
         }
     }
